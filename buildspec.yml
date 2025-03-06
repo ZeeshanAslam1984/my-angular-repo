@@ -1,3 +1,5 @@
+
+
 version: 0.2
 
 phases:
@@ -22,7 +24,6 @@ phases:
 
 artifacts:
   files:
-    - 'dist/my-angular-project/**'
+    - 'dist/my-angular-project/**/*'
     - appspec.yml
     - 'deploy-scripts/**'
-
