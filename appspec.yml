@@ -3,8 +3,12 @@ version: 0.0
 os: linux
 
 files:
+  files:
   - source: dist/my-angular-project
     destination: /var/www/my-angular-project
+  - source: deploy-scripts/application-start-hook.sh   # Add this
+    destination: /opt/codedeploy-agent/deployment-root/ # Ensure correct path
+
 
 permissions:
   - object: /var/www/my-angular-project
