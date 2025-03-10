@@ -14,7 +14,7 @@ permissions:
   - object: /var/www/my-angular-project
     mode: '0755'
     owner: root
-    group: root
+    group: 
     type:
       - file
       - directory
